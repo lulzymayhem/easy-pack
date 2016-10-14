@@ -7,7 +7,7 @@ if [[ $distro == "Arch" ]]; then
 	if [[ $todo == "install" ]]; then
 		echo What would you like to install?
 		read install
-		sudo pacman -S install
+		sudo pacman -S $install
 	elif [[ $todo == "remove" ]]; then
 		echo What would you like to remove?
 		read toremove
