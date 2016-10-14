@@ -1,5 +1,5 @@
 #!/bin/bash
-distro=$( cat /etc/easy-pack.conf )
+distro=$( cat /etc/easy-pack/easy-pack.conf )
 if [[ $distro == "Arch" ]]; then
 	echo "What do you want to do?"
 	read todo
