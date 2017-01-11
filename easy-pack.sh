@@ -1,7 +1,7 @@
 #!/bin/bash
 distro=$( cat /etc/easy-pack/easy-pack.conf )
 if [[ $distro == "Arch" ]]; then
-	echo "What do you want to do?"
+	echo "What do you want to do? (install, remove, update, synchronize, or search)"
 	read todo
 
 	if [[ $todo == "install" ]]; then
@@ -24,7 +24,7 @@ if [[ $distro == "Arch" ]]; then
 		echo "This is not an option."
 	fi
 elif [[ $distro == "Debian" ]]; then
-	echo "What do you want to do?"
+	echo "What do you want to do? (install, remove, synchronize, or upgrade)"
 	read tododeb
 	if [[ $tododeb == "install" ]]; then
 		echo "What would you like to install?"
