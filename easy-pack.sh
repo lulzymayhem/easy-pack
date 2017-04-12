@@ -46,7 +46,7 @@ elif [[ $distro == "Debian" ]]; then
 		sudo apt-get dist-upgrade
 	fi
 if [[distro == "Redhat" ]]; then
-	echo ("What do you want to do? (install, remove, search, synchronize, update)")
+	echo "What do you want to do? (install, remove, search, synchronize, update)"
 	read todored
 	if [[ $todored == "install" ]]; then
 		echo "What would you like to install?"
