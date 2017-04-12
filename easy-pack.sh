@@ -45,13 +45,13 @@ elif [[ $distro == "Debian" ]]; then
 	elif [[ $tododeb == "upgrade" ]]; then
 		sudo apt-get dist-upgrade
 	fi
-if [[distro == "Redhat" ]]; then
+elif [[distro == "Redhat" ]]; then
 	echo "What do you want to do? (install, remove, search, synchronize, update)"
 	read todored
 	if [[ $todored == "install" ]]; then
 		echo "What would you like to install?"
 		read redinstall
 		yum install $redinstall
-	elif [[ $todored == "remove" ]]; then
+	fi
 		
 fi
